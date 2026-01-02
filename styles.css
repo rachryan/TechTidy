@@ -1,0 +1,109 @@
+:root {
+    --text-main: #1a1a1a;
+    --text-sub: #5f6368;
+    --bg-light: #ffffff;
+    /* Card Colors from Image */
+    --c-beige: #f5f3ef;
+    --c-mint: #e8f3f0;
+    --c-lavender: #eceef7;
+    --c-peach: #f5e9e8;
+    --c-green: #e9f3e9;
+    --c-blue: #eaeffa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+}
+
+h1 { font-weight: 700; margin-bottom: 5px; }
+h2 { font-weight: 700; margin-top: 40px; margin-bottom: 20px; }
+
+.subtitle { color: var(--text-sub); font-size: 1.1rem; margin-top: 0; }
+
+.intro {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-sub);
+    line-height: 1.4;
+    margin: 40px 0;
+}
+
+/* Grid Layout */
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+/* Card Styling */
+.card {
+    padding: 24px;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card p {
+    margin: 8px 0 0 0;
+    color: var(--text-sub);
+    font-size: 1.1rem;
+}
+
+/* Background Colors */
+.bg-beige { background-color: var(--c-beige); }
+.bg-mint { background-color: var(--c-mint); }
+.bg-lavender { background-color: var(--c-lavender); }
+.bg-peach { background-color: var(--c-peach); }
+.bg-green { background-color: var(--c-green); }
+.bg-blue { background-color: var(--c-blue); }
+
+/* Call to Action */
+.cta {
+    margin-top: 80px;
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    padding: 40px 0;
+}
