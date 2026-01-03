@@ -3,92 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offers | TechTidy</title>
+    <title>TechTidy | AI-Ready Systems for Humans</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <nav>
         <div class="container nav-content">
-            <a href="index.html" class="logo"><span class="logo-icon">TT</span> TechTidy</a>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">TT</span> TechTidy
+            </a>
             <div class="nav-links">
-                <a href="offers.html" style="color: var(--accent); font-weight: 700;">Offers</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#results">Results</a>
-                <a href="index.html#get-started" class="btn-nav">Get started</a>
+                <a href="offers.html">Offers</a>
+                <a href="#about">About</a>
+                <a href="#results">Results</a>
+                <a href="#get-started" class="btn-nav">Get started</a>
             </div>
         </div>
     </nav>
 
-    <header style="padding: 100px 0 60px 0; background: linear-gradient(to bottom, #f9f8ff, #ffffff);">
-        <div class="container" style="text-align: center;">
-            <h1 style="font-size: 3.5rem; letter-spacing: -2px; line-height: 1; margin-bottom: 20px;">1-on-1 Support.<br>Zero Tech-Speak.</h1>
-            <p style="font-size: 1.3rem; color: var(--text-sub); max-width: 800px; margin: 0 auto;">
-                We specialize in <strong>online screenshare sessions</strong> where we tackle your Google, Microsoft, and Cloud issues together. We work exactly how you work.
-            </p>
-        </div>
+    <!-- Hero Section -->
+    <header class="container" style="padding: 100px 0; text-align: center;">
+        <span class="fit-tag good-fit" style="margin-bottom: 20px;">Google • Microsoft • AI • The Cloud</span>
+        <h1 style="font-size: 4rem; line-height: 1.1; letter-spacing: -2px;">Stop fighting the cloud.<br>Start using it.</h1>
+        <p style="font-size: 1.3rem; color: var(--text-sub); max-width: 750px; margin: 20px auto 40px;">
+            We bridge the gap between your tools so you can work <strong>smarter, not harder.</strong> Through 1-on-1 online screenshare sessions, we build a digital foundation that is ready for the future of AI.
+        </p>
+        <a href="#get-started" class="btn-nav" style="padding: 18px 40px; font-size: 1.1rem;">Book your free 15-min chat</a>
     </header>
 
-    <main class="container" style="padding-bottom: 100px;">
-        <div class="jigsaw-grid">
-            
-            <div class="offer-box">
-                <span class="fit-tag good-fit">1-on-1 Session</span>
-                <h2 style="font-size: 1.8rem; margin: 10px 0;">The Quick Fix</h2>
-                <p>One targeted screenshare to solve a specific tech "gremlin."</p>
-                <ul style="padding-left: 20px; font-size: 0.95rem; margin: 20px 0; color: var(--text-sub);">
-                    <li>Fixing sync errors</li>
-                    <li>Email triage & "mystical cloud" setup</li>
-                    <li>Google Drive permission cleanup</li>
-                </ul>
-                <div class="tools-stack">
-                    <span class="tool-pill">Google Suite</span>
-                    <span class="tool-pill">OneDrive</span>
+    <!-- About Section -->
+    <section id="about" style="background: var(--accent-light);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h2>The "TechTidy" Way</h2>
+                    <p style="font-size: 1.25rem; color: var(--text-main);">
+                        Whether it's the <strong>Google Suite</strong>, <strong>Microsoft 365</strong>, or that "mystical cloud" everyone talks about, we bring the pieces together like a jigsaw.
+                    </p>
+                    <p style="font-size: 1.1rem; color: var(--text-sub);">
+                        We don't just send you a video and wish you luck. We hop on an <strong>online screenshare session</strong> and walk through your actual files, working exactly how <em>you</em> work. No judgment, just systems that stick.
+                    </p>
+                </div>
+                <div style="background: white; padding: 40px; border-radius: 30px; border: 1px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <i data-lucide="sparkles" color="var(--accent)" size="48"></i>
+                    <h3 style="margin-top: 20px; font-size: 1.5rem;">AI-Ready Foundations</h3>
+                    <p style="color: var(--text-sub);">AI is a powerful engine, but it needs clean fuel. We organize your data so you can actually leverage tools like ChatGPT and Copilot without the digital chaos.</p>
                 </div>
             </div>
-
-            <div class="offer-box featured">
-                <div class="featured-tag">Future Proof</div>
-                <span class="fit-tag good-fit">Full Audit</span>
-                <h2 style="font-size: 1.8rem; margin: 10px 0;">The Digital Reset</h2>
-                <p>Complete structural cleanup to get your business <strong>AI-Ready</strong>.</p>
-                <ul style="padding-left: 20px; font-size: 0.95rem; margin: 20px 0; color: var(--text-sub);">
-                    <li>SharePoint/Drive hierarchy</li>
-                    <li>Team naming protocols</li>
-                    <li>Cloud centralization</li>
-                </ul>
-                <div class="tools-stack">
-                    <span class="tool-pill">Microsoft 365</span>
-                    <span class="tool-pill">Teams</span>
-                    <span class="tool-pill">SharePoint</span>
-                </div>
-            </div>
-
-            <div class="offer-box">
-                <span class="fit-tag good-fit">Automation</span>
-                <h2 style="font-size: 1.8rem; margin: 10px 0;">Smarter Workflows</h2>
-                <p>Connect your tools so you can work <strong>smarter, not harder.</strong></p>
-                <ul style="padding-left: 20px; font-size: 0.95rem; margin: 20px 0; color: var(--text-sub);">
-                    <li>App integration (Zapier/Make)</li>
-                    <li>AI content drafting setups</li>
-                    <li>Automated intake forms</li>
-                </ul>
-                <div class="tools-stack">
-                    <span class="tool-pill">Zapier</span>
-                    <span class="tool-pill">AI Integration</span>
-                </div>
-            </div>
-
         </div>
+    </section>
 
-        <div class="cta-section" style="background: var(--primary); color: white;">
-            <h2 style="margin-bottom: 10px;">Ready to work smarter?</h2>
-            <p style="opacity: 0.8; margin-bottom: 30px;">Let’s put the jigsaw together in a quick 1-on-1 session.</p>
-            <a href="index.html#get-started" class="btn-nav" style="background: var(--accent);">Book your session</a>
+    <!-- Results Section -->
+    <section id="results">
+        <div class="container">
+            <div class="results-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 3rem;">Results</h2>
+                <p style="font-size: 1.2rem; color: var(--text-sub);">The goal isn't perfect. It's usable on real-life days.</p>
+            </div>
+
+            <div class="results-visual">
+                <div class="res-card">
+                    <i data-lucide="search" size="40"></i>
+                    <h3>Faster Retrieval</h3>
+                    <p>Less time hunting for files and "the right version." Search less, find more.</p>
+                </div>
+                <div class="res-card">
+                    <i data-lucide="users" size="40"></i>
+                    <h3>Cleaner Collaboration</h3>
+                    <p>Sharing and permissions stop being a slow-motion crisis across your team.</p>
+                </div>
+                <div class="res-card">
+                    <i data-lucide="brain" size="40"></i>
+                    <h3>Lower Cognitive Load</h3>
+                    <p>Fewer decisions, fewer steps, less friction. Work smarter, not harder.</p>
+                </div>
+            </div>
+
+            <div class="testimonial-wall">
+                <div class="test-item">"It feels calmer. I don't dread opening my inbox anymore."</div>
+                <div class="test-item">"The structure sticks because it's simple."</div>
+                <div class="test-item">"We finally have a workflow everyone can follow."</div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" style="background: #fafafa;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Ready to find things in seconds?</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Drop me a line</h3>
+                    <form action="https://formspree.io/f/xzdpweel" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Tell me about your tech 'gremlins'..." required></textarea>
+                        <button type="submit" class="btn-send">Send Message</button>
+                    </form>
+                </div>
+                <div class="calendly-embed">
+                    <h3>Book a 1-on-1 Chat</h3>
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/tech_tidy?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:500px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container" style="padding: 60px 0; text-align: center; color: var(--text-sub); border-top: 1px solid #eee;">
+        <p>&copy; 2026 TechTidy. Systems for humans.</p>
+    </footer>
+
+    <!-- Bot code can go here -->
 
     <script>lucide.createIcons();</script>
 </body>
