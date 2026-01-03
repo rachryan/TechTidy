@@ -1,0 +1,62 @@
+:root {
+    --primary: #1a1a1a; /* Black from your top bar */
+    --accent: #6c5ce7;
+    --text-main: #1a1a1a;
+    --text-sub: #5f6368;
+    --bg-light: #ffffff;
+    --border: #eeeeee;
+    /* Focus Area Colors */
+    --c-m365: #f5f3ef; --c-google: #e8f3f0; --c-ai: #eceef7;
+    --c-auto: #f5e9e8; --c-train: #e9f3e9; --c-clean: #eaeffa;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; color: var(--text-main); line-height: 1.6; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* --- NAVIGATION BAR --- */
+nav {
+    height: 70px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+.nav-content { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.logo { font-weight: 800; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; text-decoration: none; color: black; }
+.logo-icon { border: 1px solid #ddd; padding: 5px 8px; border-radius: 10px; font-size: 0.9rem; }
+.nav-links { display: flex; gap: 30px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text-sub); font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.btn-nav { background: var(--primary); color: white !important; padding: 10px 20px; border-radius: 12px; }
+
+/* --- SECTIONS --- */
+section { padding: 100px 0; }
+h2 { font-size: 2.5rem; margin-bottom: 40px; letter-spacing: -1px; }
+
+/* --- RESULTS SECTION --- */
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.results-left p { font-size: 1.2rem; color: var(--text-sub); margin-bottom: 30px; }
+.results-list { list-style: none; padding: 0; }
+.results-list li { margin-bottom: 25px; font-size: 1.1rem; position: relative; padding-left: 30px; }
+.results-list li::before { content: "•"; color: #ccc; font-size: 2rem; position: absolute; left: 0; top: -10px; }
+.results-list b { color: var(--primary); }
+
+.quotes-card { background: #f9f9f9; padding: 40px; border-radius: 24px; border: 1px solid var(--border); }
+.quote-item { background: white; padding: 20px; border-radius: 16px; margin-bottom: 15px; border: 1px solid #f0f0f0; font-style: italic; color: var(--text-sub); }
+
+/* --- CONTACT & CALENDLY --- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: #fff; }
+.contact-form { background: #fdfdfd; padding: 40px; border-radius: 24px; border: 1px solid var(--border); }
+input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; font-family: inherit; }
+.btn-send { background: var(--primary); color: white; border: none; padding: 15px 30px; border-radius: 10px; cursor: pointer; font-weight: 700; width: 100%; }
+
+/* Mobile Responsive */
+@media (max-width: 850px) {
+    .results-grid, .contact-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; } /* Simplified for demo, you'd usually add a hamburger menu */
+}
