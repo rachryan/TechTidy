@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers | TechTidy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .offer-card { padding: 40px; border-radius: 24px; margin-bottom: 20px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><span class="logo-icon">TT</span> TechTidy</a>
+            <div class="nav-links">
+                <a href="offers.html" style="color: black; font-weight: 700;">Offers</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#results">Results</a>
+                <a href="index.html#get-started" class="btn-nav">Get started</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 80px 0;">
+        <h1>How we work together</h1>
+        <p style="font-size: 1.2rem; color: var(--text-sub); margin-bottom: 60px;">From one-off resets to ongoing support, we have a package for every stage of growth.</p>
+
+        <div class="grid-2">
+            <div class="offer-card" style="background: var(--c-clean);">
+                <i data-lucide="sparkles" style="margin-bottom: 20px;"></i>
+                <h3>The Digital Reset</h3>
+                <p>A deep-dive cleanup of your files, folders, and sharing settings. We get you back to zero.</p>
+            </div>
+            <div class="offer-card" style="background: var(--c-ai);">
+                <i data-lucide="zap" style="margin-bottom: 20px;"></i>
+                <h3>Workflow Automation</h3>
+                <p>Connecting your apps so you don't have to copy-paste data ever again.</p>
+            </div>
+            <!-- Add more cards here following the same pattern -->
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="index.html#get-started" class="btn-nav">Back to booking</a>
+        </div>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
