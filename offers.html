@@ -1,70 +1,158 @@
-<div class="container" style="padding: 100px 0;">
-    <div style="max-width: 700px; margin-bottom: 60px;">
-        <h1 style="font-size: 3.5rem; letter-spacing: -2px;">Fitting the pieces together.</h1>
-        <p style="font-size: 1.25rem; color: var(--text-sub);">You already have the tools. You just need the system that connects them. I help you bridge the gap between your platforms.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers | TechTidy</title>
+    <!-- Same fonts and icons as index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
-    <div class="jigsaw-grid">
-        <!-- Tier 1 -->
-        <div class="offer-box">
-            <span class="fit-tag good-fit">Good fit if:</span>
-            <p>You have one specific "annoyance" like a messy inbox or a OneDrive that won't sync.</p>
-            
-            <h3>Quick Fix Session</h3>
-            <p>One focused 90-minute deep dive to kill a specific point of friction.</p>
-            
-            <span class="fit-tag not-fit">Not for:</span>
-            <p>Moving your entire company from one platform to another.</p>
-
-            <div class="tools-stack">
-                <span class="tool-pill">Outlook Rules</span>
-                <span class="tool-pill">OneDrive Triage</span>
-                <span class="tool-pill">Google Drive Sort</span>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">TT</span> TechTidy
+            </a>
+            <div class="nav-links">
+                <a href="offers.html" style="color: var(--accent); font-weight: 700;">Offers</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#results">Results</a>
+                <a href="index.html#get-started" class="btn-nav">Get started</a>
             </div>
         </div>
+    </nav>
 
-        <!-- Tier 2 -->
-        <div class="offer-box featured">
-            <div class="featured-tag">Most Popular</div>
-            <span class="fit-tag good-fit">Good fit if:</span>
-            <p>Your setup works "sometimes" but it's draining your attention and feels messy underneath.</p>
-            
-            <h3>The Digital Reset</h3>
-            <p>A full structural overhaul of your filing, naming, and sharing protocols.</p>
-            
-            <span class="fit-tag not-fit">Not for:</span>
-            <p>Teams that refuse to follow a single folder rule (no judgment!).</p>
-
-            <div class="tools-stack">
-                <span class="tool-pill">SharePoint Org</span>
-                <span class="tool-pill">Teams Channels</span>
-                <span class="tool-pill">Permission Audit</span>
-                <span class="tool-pill">Google Workspace Admin</span>
+    <!-- Hero Section -->
+    <header style="padding: 80px 0 40px 0; background: linear-gradient(to bottom, #f9f8ff, #ffffff);">
+        <div class="container">
+            <div style="max-width: 750px;">
+                <span style="color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Our Services</span>
+                <h1 style="font-size: 3.5rem; letter-spacing: -2px; line-height: 1.1; margin-top: 15px;">Fitting the pieces together.</h1>
+                <p style="font-size: 1.3rem; color: var(--text-sub); margin-top: 20px;">
+                    You already have the tools—Google, Microsoft, OneDrive, Slack. You just need the system that connects them. I help you bridge the gap so your tech works like a single, seamless machine.
+                </p>
             </div>
         </div>
+    </header>
 
-        <!-- Tier 3 -->
-        <div class="offer-box">
-            <span class="fit-tag good-fit">Good fit if:</span>
-            <p>You are tired of "manual" work. You want your apps to talk to each other without you.</p>
+    <!-- Offers Grid -->
+    <main class="container" style="padding-bottom: 100px;">
+        <div class="jigsaw-grid">
             
-            <h3>Workflow + Automation</h3>
-            <p>The Jigsaw Masterclass. We connect your stack for a seamless hands-off flow.</p>
-            
-            <span class="fit-tag not-fit">Not for:</span>
-            <p>Heavy custom software development or enterprise ERP builds.</p>
+            <!-- Offer 1: Quick Fix -->
+            <div class="offer-box">
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag good-fit">Good fit if</span>
+                    <p style="font-size: 0.95rem; margin-top: 8px;">You have one specific "annoyance" and you want it fixed cleanly without creating a new mess.</p>
+                </div>
+                
+                <h2 style="font-size: 1.8rem; margin: 0;">Quick Fix Session</h2>
+                <p style="color: var(--text-sub); margin: 15px 0;">One focused 90-minute session to remove a specific point of friction in your workday.</p>
+                
+                <div style="margin: 20px 0; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; text-transform: uppercase; color: #999;">Common Fixes:</h4>
+                    <ul style="padding-left: 20px; font-size: 0.95rem;">
+                        <li>Syncing OneDrive & SharePoint correctly</li>
+                        <li>Inbox triage & automated rules</li>
+                        <li>Google Drive permission cleanup</li>
+                    </ul>
+                </div>
 
-            <div class="tools-stack">
-                <span class="tool-pill">Zapier / Make</span>
-                <span class="tool-pill">Form Intake</span>
-                <span class="tool-pill">Task Routing</span>
-                <span class="tool-pill">AI Drafting</span>
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag not-fit">Not for</span>
+                    <p style="font-size: 0.85rem; margin-top: 5px; color: #999;">Large multi-department migrations or "rebuilding everything" from scratch.</p>
+                </div>
+
+                <div class="tools-stack">
+                    <span class="tool-pill">Outlook</span>
+                    <span class="tool-pill">Gmail</span>
+                    <span class="tool-pill">OneDrive</span>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div style="text-align: center; margin-top: 80px;">
-        <p style="color: var(--text-sub);">Not sure which piece goes where?</p>
-        <a href="index.html#get-started" class="btn-nav">Let's talk about it</a>
-    </div>
-</div>
+            <!-- Offer 2: Digital Reset (FEATURED) -->
+            <div class="offer-box featured">
+                <div class="featured-tag">Most Popular</div>
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag good-fit">Good fit if</span>
+                    <p style="font-size: 0.95rem; margin-top: 8px;">Your setup works "sometimes," but it’s messy underneath and draining your daily attention.</p>
+                </div>
+                
+                <h2 style="font-size: 1.8rem; margin: 0;">The Digital Reset</h2>
+                <p style="color: var(--text-sub); margin: 15px 0;">A structured overhaul so your core tools feel calm, predictable, and actually professional.</p>
+                
+                <div style="margin: 20px 0; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; text-transform: uppercase; color: var(--accent);">Typical Outcomes:</h4>
+                    <ul style="padding-left: 20px; font-size: 0.95rem;">
+                        <li>Clear folder hierarchy that stays tidy</li>
+                        <li>Standardized naming across the team</li>
+                        <li>Teams/Slack channel optimization</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag not-fit">Not for</span>
+                    <p style="font-size: 0.85rem; margin-top: 5px; color: #999;">Teams who aren't ready to follow simple rules (no judgment—just reality).</p>
+                </div>
+
+                <div class="tools-stack">
+                    <span class="tool-pill" style="border-color: var(--accent); color: var(--accent);">SharePoint</span>
+                    <span class="tool-pill" style="border-color: var(--accent); color: var(--accent);">Google Workspace</span>
+                    <span class="tool-pill" style="border-color: var(--accent); color: var(--accent);">MS Teams</span>
+                </div>
+            </div>
+
+            <!-- Offer 3: Workflow -->
+            <div class="offer-box">
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag good-fit">Good fit if</span>
+                    <p style="font-size: 0.95rem; margin-top: 8px;">Recurring tasks keep stealing time and your process depends on your memory.</p>
+                </div>
+                
+                <h2 style="font-size: 1.8rem; margin: 0;">Workflow + Auto</h2>
+                <p style="color: var(--text-sub); margin: 15px 0;">Remove repetitive steps with light automation to let your business run while you sleep.</p>
+                
+                <div style="margin: 20px 0; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; text-transform: uppercase; color: #999;">Example Flows:</h4>
+                    <ul style="padding-left: 20px; font-size: 0.95rem;">
+                        <li>Intake forms → Task routing</li>
+                        <li>Auto-filing signed contracts</li>
+                        <li>AI-assisted draft generation</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <span class="fit-tag not-fit">Not for</span>
+                    <p style="font-size: 0.85rem; margin-top: 5px; color: #999;">Complex enterprise programs or heavy custom code development.</p>
+                </div>
+
+                <div class="tools-stack">
+                    <span class="tool-pill">Zapier / Make</span>
+                    <span class="tool-pill">Typeform</span>
+                    <span class="tool-pill">AI Tools</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Secondary CTA -->
+        <div class="cta-section" style="background: var(--accent-light); color: var(--primary);">
+            <h2 style="margin-bottom: 10px;">Not sure where the pieces go?</h2>
+            <p style="color: var(--text-sub); margin-bottom: 30px;">Let's look at your screen together and figure it out.</p>
+            <a href="index.html#get-started" class="btn-nav" style="background: var(--accent);">Book a 15-min chat</a>
+        </div>
+    </main>
+
+    <footer class="container" style="padding-bottom: 60px; text-align: center; color: var(--text-sub);">
+        <p>&copy; 2026 TechTidy. Systems for the rest of us.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
