@@ -53,4 +53,59 @@ section {
     background-color: rgba(249, 249, 247, 0.95);
     box-shadow: 0 4px 20px rgba(0,0,0,0.01);
 }
+    /* Core Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+}
+
+/* Navbar Scrolled State */
+#navbar.border-slate-200 {
+    background-color: rgba(249, 249, 247, 0.95);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.02);
+}
+
+/* Section Anchors */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Solution Grid Interaction */
+.solution-card {
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.solution-card:hover {
+    background-color: #ffffff;
+    z-index: 10;
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+}
+
+/* About Image Refinement */
+.about-image {
+    display: block;
+    opacity: 0.9;
+}
+
+.about-image:hover {
+    opacity: 1;
+    grayscale: 0%;
+    transform: scale(1.05);
+}
+
+/* Calendly Popup Customization Override */
+/* This ensures the Calendly popup matches your site's simplicity */
+.calendly-overlay {
+    background-color: rgba(26, 26, 26, 0.9) !important;
+}
+
+.calendly-popup {
+    border-radius: 4px !important;
+}
  }
