@@ -1,125 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechTidy | AI-Ready Systems for Humans</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>TechTidy | Tech Consulting for Small Business & Non-Profits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#F9F9F7] text-[#1A1A1A] selection:bg-slate-200">
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">TT</span> TechTidy
-            </a>
-            <div class="nav-links">
-                <a href="offers.html">Offers</a>
-                <a href="#about">About</a>
-                <a href="#results">Results</a>
-                <a href="#get-started" class="btn-nav">Get started</a>
+    <nav class="sticky top-0 z-50 bg-[#F9F9F7]/80 backdrop-blur-md border-b border-transparent transition-all duration-300" id="navbar">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-semibold tracking-tighter">TechTidy</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#philosophy" class="hover:text-slate-500 transition">Philosophy</a>
+                <a href="#solutions" class="hover:text-slate-500 transition">Solutions</a>
+                <a href="#about" class="hover:text-slate-500 transition">About</a>
+                <a href="#contact" class="bg-[#1A1A1A] text-white px-4 py-2 hover:bg-slate-800 transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="container" style="padding: 100px 0; text-align: center;">
-        <span class="fit-tag good-fit" style="margin-bottom: 20px;">Google • Microsoft • AI • The Cloud</span>
-        <h1 style="font-size: 4rem; line-height: 1.1; letter-spacing: -2px;">Stop fighting the cloud.<br>Start using it.</h1>
-        <p style="font-size: 1.3rem; color: var(--text-sub); max-width: 750px; margin: 20px auto 40px;">
-            We bridge the gap between your tools so you can work <strong>smarter, not harder.</strong> Through 1-on-1 online screenshare sessions, we build a digital foundation that is ready for the future of AI.
-        </p>
-        <a href="#get-started" class="btn-nav" style="padding: 18px 40px; font-size: 1.1rem;">Book your free 15-min chat</a>
+    <header class="max-w-5xl mx-auto px-6 pt-24 pb-32">
+        <div class="max-w-3xl">
+            <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold mb-4 block">Specializing in M365 & Non-Profit Efficiency</span>
+            <h1 class="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight mb-8">
+                Stop fighting your software. <br><span class="italic font-normal">Start running your business.</span>
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed mb-10">
+                TechTidy streamlines digital infrastructure for non-technical teams. We move you from technical chaos to operational clarity with zero jargon.
+            </p>
+            <div class="flex items-center gap-6">
+                <a href="#contact" class="text-sm font-semibold border-b-2 border-[#1A1A1A] pb-1 hover:text-slate-500 hover:border-slate-500 transition">Work with TechTidy —></a>
+            </div>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" style="background: var(--accent-light);">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                <div>
-                    <h2>The "TechTidy" Way</h2>
-                    <p style="font-size: 1.25rem; color: var(--text-main);">
-                        Whether it's the <strong>Google Suite</strong>, <strong>Microsoft 365</strong>, or that "mystical cloud" everyone talks about, we bring the pieces together like a jigsaw.
-                    </p>
-                    <p style="font-size: 1.1rem; color: var(--text-sub);">
-                        We don't just send you a video and wish you luck. We hop on an <strong>online screenshare session</strong> and walk through your actual files, working exactly how <em>you</em> work. No judgment, just systems that stick.
-                    </p>
-                </div>
-                <div style="background: white; padding: 40px; border-radius: 30px; border: 1px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <i data-lucide="sparkles" color="var(--accent)" size="48"></i>
-                    <h3 style="margin-top: 20px; font-size: 1.5rem;">AI-Ready Foundations</h3>
-                    <p style="color: var(--text-sub);">AI is a powerful engine, but it needs clean fuel. We organize your data so you can actually leverage tools like ChatGPT and Copilot without the digital chaos.</p>
-                </div>
+    <section class="bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl font-light">100%</p>
+                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Cloud Transition</p>
+            </div>
+            <div>
+                <p class="text-3xl font-light">40%</p>
+                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Manual Task Reduction</p>
+            </div>
+            <div>
+                <p class="text-3xl font-light">0</p>
+                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Technical Jargon</p>
+            </div>
+            <div>
+                <p class="text-3xl font-light">Secure</p>
+                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Data Protection</p>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results">
-        <div class="container">
-            <div class="results-header" style="text-align: center; margin-bottom: 60px;">
-                <h2 style="font-size: 3rem;">Results</h2>
-                <p style="font-size: 1.2rem; color: var(--text-sub);">The goal isn't perfect. It's usable on real-life days.</p>
+    <section id="philosophy" class="max-w-5xl mx-auto px-6 py-32">
+        <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-16 font-semibold">The Methodology</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group cursor-default">
+                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Assess</h3>
+                <p class="text-slate-600 leading-relaxed">We audit your existing tools. Often, you already own the solutions; they just need professional alignment.</p>
             </div>
-
-            <div class="results-visual">
-                <div class="res-card">
-                    <i data-lucide="search" size="40"></i>
-                    <h3>Faster Retrieval</h3>
-                    <p>Less time hunting for files and "the right version." Search less, find more.</p>
-                </div>
-                <div class="res-card">
-                    <i data-lucide="users" size="40"></i>
-                    <h3>Cleaner Collaboration</h3>
-                    <p>Sharing and permissions stop being a slow-motion crisis across your team.</p>
-                </div>
-                <div class="res-card">
-                    <i data-lucide="brain" size="40"></i>
-                    <h3>Lower Cognitive Load</h3>
-                    <p>Fewer decisions, fewer steps, less friction. Work smarter, not harder.</p>
-                </div>
+            <div class="group cursor-default">
+                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Improve</h3>
+                <p class="text-slate-600 leading-relaxed">We clean file paths, automate repetitive approvals, and lock down security protocols.</p>
             </div>
-
-            <div class="testimonial-wall">
-                <div class="test-item">"It feels calmer. I don't dread opening my inbox anymore."</div>
-                <div class="test-item">"The structure sticks because it's simple."</div>
-                <div class="test-item">"We finally have a workflow everyone can follow."</div>
+            <div class="group cursor-default">
+                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Connect</h3>
+                <p class="text-slate-600 leading-relaxed">Training is the core. We ensure your staff feels confident and "tech-capable" before we leave.</p>
             </div>
         </div>
     </section>
 
-    <!-- Get Started Section -->
-    <section id="get-started" style="background: #fafafa;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 50px;">Ready to find things in seconds?</h2>
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <h3>Drop me a line</h3>
-                    <form action="https://formspree.io/f/xzdpweel" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="5" placeholder="Tell me about your tech 'gremlins'..." required></textarea>
-                        <button type="submit" class="btn-send">Send Message</button>
-                    </form>
-                </div>
-                <div class="calendly-embed">
-                    <h3>Book a 1-on-1 Chat</h3>
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/tech_tidy?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:500px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
+    <section id="solutions" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
+        <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-16 font-semibold">Problems vs. Progress</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="solution-card border border-slate-200 p-10 hover:border-slate-400 transition-colors">
+                <h4 class="font-semibold mb-4 text-lg">Fractured Data</h4>
+                <p class="text-slate-600">Replacing messy folders with a logical SharePoint structure where files are found in seconds.</p>
+            </div>
+            <div class="solution-card border border-slate-200 p-10 hover:border-slate-400 transition-colors">
+                <h4 class="font-semibold mb-4 text-lg">Admin Bloat</h4>
+                <p class="text-slate-600">Using Power Automate to handle email notifications and data entry so you can focus on strategy.</p>
             </div>
         </div>
     </section>
 
-    <footer class="container" style="padding: 60px 0; text-align: center; color: var(--text-sub); border-top: 1px solid #eee;">
-        <p>&copy; 2026 TechTidy. Systems for humans.</p>
+    <section id="about" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+            <div class="w-full md:w-1/3">
+                <div class="aspect-square bg-slate-200 grayscale hover:grayscale-0 transition-all duration-500 rounded-sm">
+                    </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-6 font-semibold">Behind TechTidy</h2>
+                <h3 class="text-3xl font-light mb-6">Expertise without the ego.</h3>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    I founded TechTidy to bridge the gap between complex cloud systems and the non-technical people who use them every day. Whether it's a domain migration or a custom automation, my mission is to leave your business cleaner and more capable than I found it.
+                </p>
+                <p class="text-slate-500 font-medium italic">— Founder, TechTidy</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
+        <div class="max-w-xl">
+            <h2 class="text-4xl font-light mb-8">Ready to simplify?</h2>
+            <p class="text-slate-600 mb-12 text-lg">
+                Let’s discuss your current setup and find the friction points.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:hello@techtidy.com" class="inline-block bg-[#1A1A1A] text-white px-10 py-5 text-sm font-medium hover:bg-slate-800 transition text-center">
+                    Schedule a Consultation
+                </a>
+                <a href="#" class="inline-block border border-slate-200 px-10 py-5 text-sm font-medium hover:bg-white transition text-center">
+                    Download Efficiency Checklist
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bot code can go here -->
-
-    <script>lucide.createIcons();</script>
+    <script>
+        // Subtle navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('border-slate-200');
+            } else {
+                nav.classList.remove('border-slate-200');
+            }
+        });
+    </script>
 </body>
 </html>
