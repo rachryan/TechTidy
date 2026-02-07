@@ -3,74 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechTidy | Tech Consulting for Small Business & Non-Profits</title>
+    <title>TechTidy | Technical Consulting for Clarity</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body class="bg-[#F9F9F7] text-[#1A1A1A] selection:bg-slate-200">
 
     <nav class="sticky top-0 z-50 bg-[#F9F9F7]/80 backdrop-blur-md border-b border-transparent transition-all duration-300" id="navbar">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-semibold tracking-tighter">TechTidy</div>
-            <div class="space-x-8 text-sm font-medium">
+            <div class="text-xl font-semibold tracking-tighter cursor-default">TechTidy</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#philosophy" class="hover:text-slate-500 transition">Philosophy</a>
                 <a href="#solutions" class="hover:text-slate-500 transition">Solutions</a>
                 <a href="#about" class="hover:text-slate-500 transition">About</a>
-                <a href="#contact" class="bg-[#1A1A1A] text-white px-4 py-2 hover:bg-slate-800 transition">Contact</a>
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tech_tidy/30min'});return false;" class="bg-[#1A1A1A] text-white px-4 py-2 hover:bg-slate-800 transition">Book a Call</a>
             </div>
         </div>
     </nav>
 
     <header class="max-w-5xl mx-auto px-6 pt-24 pb-32">
         <div class="max-w-3xl">
-            <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold mb-4 block">Specializing in M365, Power Automate, GoogleSuite & More</span>
+            <span class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold mb-4 block">M365 & Non-Profit Efficiency</span>
             <h1 class="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight mb-8">
                 Stop fighting your software. <br><span class="italic font-normal">Start running your business.</span>
             </h1>
-            <p class="text-xl text-slate-600 leading-relaxed mb-10">
-                TechTidy streamlines digital infrastructure for non-technical teams. We move you from technical chaos to operational clarity with zero jargon.
+            <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
+                TechTidy helps non-technical teams move from digital chaos to operational clarity. No jargon, no bloat—just systems that work.
             </p>
-            <div class="flex items-center gap-6">
-                <a href="#contact" class="text-sm font-semibold border-b-2 border-[#1A1A1A] pb-1 hover:text-slate-500 hover:border-slate-500 transition">Work with TechTidy —></a>
-            </div>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tech_tidy/30min'});return false;" class="text-sm font-semibold border-b-2 border-[#1A1A1A] pb-1 hover:text-slate-500 hover:border-slate-500 transition inline-block">Work with TechTidy —></a>
         </div>
     </header>
 
     <section class="bg-white border-y border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <p class="text-3xl font-light">100%</p>
-                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Cloud Transition</p>
-            </div>
-            <div>
-                <p class="text-3xl font-light">40%</p>
-                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Manual Task Reduction</p>
-            </div>
-            <div>
-                <p class="text-3xl font-light">0</p>
-                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Technical Jargon</p>
-            </div>
-            <div>
-                <p class="text-3xl font-light">Secure</p>
-                <p class="text-xs uppercase tracking-widest text-slate-400 mt-2">Data Protection</p>
-            </div>
+            <div><p class="text-3xl font-light">100%</p><p class="text-[10px] uppercase tracking-widest text-slate-400 mt-2">Cloud Transition</p></div>
+            <div><p class="text-3xl font-light">40%</p><p class="text-[10px] uppercase tracking-widest text-slate-400 mt-2">Efficiency Gain</p></div>
+            <div><p class="text-3xl font-light">Zero</p><p class="text-[10px] uppercase tracking-widest text-slate-400 mt-2">Technical Jargon</p></div>
+            <div><p class="text-3xl font-light">Secure</p><p class="text-[10px] uppercase tracking-widest text-slate-400 mt-2">Data Integrity</p></div>
         </div>
     </section>
 
     <section id="philosophy" class="max-w-5xl mx-auto px-6 py-32">
-        <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-16 font-semibold">The Methodology</h2>
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="group cursor-default">
-                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Assess</h3>
+        <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-16 font-semibold underline decoration-slate-200 underline-offset-8">The Methodology</h2>
+        <div class="grid md:grid-cols-3 gap-16">
+            <div>
+                <h3 class="text-2xl font-medium mb-4">Assess</h3>
                 <p class="text-slate-600 leading-relaxed">We audit your existing tools. Often, you already own the solutions; they just need professional alignment.</p>
             </div>
-            <div class="group cursor-default">
-                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Improve</h3>
+            <div>
+                <h3 class="text-2xl font-medium mb-4">Improve</h3>
                 <p class="text-slate-600 leading-relaxed">We clean file paths, automate repetitive approvals, and lock down security protocols.</p>
             </div>
-            <div class="group cursor-default">
-                <h3 class="text-2xl font-medium mb-4 group-hover:text-slate-500 transition">Connect</h3>
+            <div>
+                <h3 class="text-2xl font-medium mb-4">Connect</h3>
                 <p class="text-slate-600 leading-relaxed">Training is the core. We ensure your staff feels confident and "tech-capable" before we leave.</p>
             </div>
         </div>
@@ -78,30 +66,28 @@
 
     <section id="solutions" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
         <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-16 font-semibold">Problems vs. Progress</h2>
-        <div class="grid md:grid-cols-2 gap-4">
-            <div class="solution-card border border-slate-200 p-10 hover:border-slate-400 transition-colors">
-                <h4 class="font-semibold mb-4 text-lg">Fractured Data</h4>
-                <p class="text-slate-600">Replacing messy folders with a logical SharePoint structure where files are found in seconds.</p>
+        <div class="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
+            <div class="bg-[#F9F9F7] p-10 solution-card">
+                <h4 class="font-semibold mb-4">Fractured Data</h4>
+                <p class="text-slate-600 text-sm">Replacing messy folders with a logical SharePoint structure where files are found in seconds.</p>
             </div>
-            <div class="solution-card border border-slate-200 p-10 hover:border-slate-400 transition-colors">
-                <h4 class="font-semibold mb-4 text-lg">Admin Bloat</h4>
-                <p class="text-slate-600">Using Power Automate to handle email notifications and data entry so you can focus on strategy.</p>
+            <div class="bg-[#F9F9F7] p-10 solution-card">
+                <h4 class="font-semibold mb-4">Admin Bloat</h4>
+                <p class="text-slate-600 text-sm">Using Power Automate to handle email notifications and data entry so you can focus on strategy.</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
         <div class="flex flex-col md:flex-row gap-16 items-center">
-            <div class="w-full md:w-1/2">
-                <div class="relative overflow-hidden rounded-sm bg-slate-100">
-                    <img src="office.jpg" alt="TechTidy Office Aesthetic" class="about-image w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700">
-                </div>
+            <div class="w-full md:w-1/2 overflow-hidden rounded-sm">
+                <img src="office.jpg" alt="TechTidy Office" class="about-image w-full h-auto grayscale transition-all duration-1000">
             </div>
             <div class="w-full md:w-1/2">
                 <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-6 font-semibold">Behind TechTidy</h2>
                 <h3 class="text-3xl font-light mb-6">Expertise without the ego.</h3>
                 <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                    I founded TechTidy to bridge the gap between complex cloud systems and the people who use them every day. Whether it's a domain migration or a custom automation, my mission is to leave your business cleaner and more capable than I found it.
+                    I founded TechTidy to bridge the gap between complex cloud systems and the people who use them every day. My mission is to leave your business cleaner and more capable than I found it.
                 </p>
                 <p class="text-slate-500 font-medium italic">— Founder, TechTidy</p>
             </div>
@@ -110,30 +96,20 @@
 
     <footer id="contact" class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-200">
         <div class="max-w-xl">
-            <h2 class="text-4xl font-light mb-8">Ready to simplify?</h2>
-            <p class="text-slate-600 mb-12 text-lg">
-                Let’s discuss your current setup and find the friction points.
-            </p>
+            <h2 class="text-4xl font-light mb-8 italic">Ready to simplify?</h2>
+            <p class="text-slate-600 mb-12 text-lg">Let’s discuss your current setup and find the friction points.</p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="mailto:hello@techtidy.com" class="inline-block bg-[#1A1A1A] text-white px-10 py-5 text-sm font-medium hover:bg-slate-800 transition text-center">
-                    Schedule a Consultation
-                </a>
-                <a href="TechTidy_Audit.pdf" target="_blank" class="inline-block border border-slate-200 px-10 py-5 text-sm font-medium hover:bg-white transition text-center">
-                    Download Efficiency Checklist
-                </a>
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tech_tidy/30min'});return false;" class="inline-block bg-[#1A1A1A] text-white px-10 py-5 text-sm font-medium hover:bg-slate-800 transition text-center">Schedule a Consultation</a>
+                <a href="TechTidy_Audit.pdf" target="_blank" class="inline-block border border-slate-200 px-10 py-5 text-sm font-medium hover:bg-white transition text-center">Download Efficiency Audit</a>
             </div>
         </div>
+        <p class="mt-24 text-[10px] text-slate-400 tracking-widest uppercase text-center">&copy; 2026 TechTidy Consulting</p>
     </footer>
 
     <script>
-        // Subtle navbar shadow on scroll
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
-            if (window.scrollY > 20) {
-                nav.classList.add('border-slate-200');
-            } else {
-                nav.classList.remove('border-slate-200');
-            }
+            window.scrollY > 20 ? nav.classList.add('border-slate-200') : nav.classList.remove('border-slate-200');
         });
     </script>
 </body>
