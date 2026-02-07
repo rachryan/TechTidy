@@ -29,3 +29,28 @@ h1, h2, h3 {
 section {
     scroll-margin-top: 100px;
 }
+
+/* Image Styling */
+.about-image {
+    opacity: 0.9;
+    transform: scale(1.01);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-image:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Ensure the About section behaves on mobile */
+@media (max-width: 768px) {
+    #about .flex-col {
+        gap: 2rem;
+    }
+
+/* Smooth Navbar Transition */
+#navbar.border-slate-200 {
+    background-color: rgba(249, 249, 247, 0.95);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+ }
